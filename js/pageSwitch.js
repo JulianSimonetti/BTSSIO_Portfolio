@@ -1,10 +1,10 @@
 function loadPage(id) {
-    $("#content").fadeOut(200).delay(400);
+    $("#content").hide(200).delay(400);
     $.ajax({
         url: "./pages/"+id+".html",
         dataType: "html",
         success: function (page) {
-            $("#content").html(page).fadeIn(200);
+            $("#content").html(page).show(200);
         }
     });
 }
