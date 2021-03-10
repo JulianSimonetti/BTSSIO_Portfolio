@@ -1,7 +1,9 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
+function loadPage(id) {
+    $.ajax({
+        url: "/pages/"+id+".html",
+        dataType: "html",
+        success: function (page) {
+            $("#content").fadeOut(200).html(page).fadeIn(200);
+        }
+    });
+}

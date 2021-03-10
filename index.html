@@ -12,20 +12,19 @@
 
         <script src="vendor/jquery/jquery-3.6.0.min.js"></script>
 
-        <!-- Bootstrap core CSS -->
         <link href="vendor/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <script src="vendor/Bootstrap/js/bootstrap.min.js"></script>
 
-        <!-- Custom fonts for this template -->
         <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-        <!-- Custom styles for this template -->
         <link href="css/clean-blog.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
 
-        <!-- Custom scripts for this template -->
+        <script src="js/pageSwitch.js"></script>
         <script src="js/clean-blog.min.js"></script>
+        
     </head>
 
     <body>
@@ -41,7 +40,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Présentation</a>
+                            <a class="nav-link" href="javascript:loadPage(1)">Présentation</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">La formation</a>
@@ -57,7 +56,7 @@
             </div>
         </nav>
 
-        <!-- Page Header -->
+        <!-- Entete -->
         <header class="masthead" style="background-image: url('img/custom-bg.jpg')">
             <div class="overlay"></div>
             <div class="container">
@@ -66,14 +65,20 @@
                         <div class="site-heading">
                             <h1>Portfolio&nbsp;:<br />Julian Simonetti</h1>
                             <span class="subheading">BTS Services Informatiques aux Organisations - option SLAM</span>
+                            <br />
+                            <div class="arrow">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
 
-        <!-- Main Content -->
-        <div class="container" id="containerPrincipal">
+        <!-- Contenu -->
+        <div class="container" id="content">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="post-preview">
@@ -102,7 +107,7 @@
 
         <hr>
 
-        <!-- Footer -->
+        <!-- Pied -->
         <footer>
             <div class="container">
                 <div class="row">
@@ -116,34 +121,34 @@
                                         <i class="fas fa-address-card fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </a>
-                                <p>CV</p>
+                                <p><a href="files/SIMONETTI Julian CV.pdf">Visualiser mon CV</a></p>
                             </li>
-                    </ul>
+                        </ul>
                     </div>
                     <div class="col-lg-auto col-md-auto mx-auto">
                         <ul class="list-inline text-center">
                             <li class="list-inline-item">
-                                <a href="#">
+                                <a href="mailto:julian.simonetti.si@gmail.com?subject=Contact%20via%20le%20portfolio">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </a>
-                                <p>E-Mail</p>
+                                <p><a href="mailto:julian.simonetti.si@gmail.com?subject=Contact%20via%20le%20portfolio">julian.simonetti.si@gmail.com</a></p>
                             </li>
-                    </ul>
+                        </ul>
                         <p class="copyright text-muted">Copyright &copy; 2021 Julian Simonetti</p>
                     </div>
                     <div class="col-lg-auto col-md-auto mx-auto">
                         <ul class="list-inline text-center">
                             <li class="list-inline-item">
-                                <a href="#">
+                                <a href="tel:0672454185">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fas fa-phone-alt fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </a>
-                                <p>Téléphone</p>
+                                <p><a href="tel:0672454185">06 72 45 41 85</a></p>
                             </li>
                         </ul>
                     </div>
