@@ -4,7 +4,13 @@ function loadPage(id) {
         url: "./pages/"+id+".html",
         dataType: "html",
         success: function (page) {
+            c = document.getElementById("content");
+            c.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
             $("#content").html(page).css('visibility', 'visible');
         }
     });
 }
+
+window.onload = function() {
+    
+};
