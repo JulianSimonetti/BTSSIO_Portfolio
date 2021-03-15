@@ -269,6 +269,10 @@ header.masthead .post-heading .meta a {
     }
 }
 
+p {
+    text-align: center;
+}
+
 .post-preview > a {
     color: #212529;
 }
