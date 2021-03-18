@@ -2,6 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
+figcaption {
+    font-style: italic;
+    font-size: 8pt;
+    color: #999999;
+}
+
 .arrow{
     position: relative;
     margin-top: 7%;

@@ -1,0 +1,52 @@
+[Notes]
+Remerciements en fin de diapo : PAS NECESSAIRE
+Portfolio : A OUVRIR AVANT LA PRESENTATION + DISPOSER DES FICHIERS LOCAUX AU CAS OU (voir peut être 2e hébergement)
+PowerPoint : ne pas hésiter à faire un screen d'une diapo sous sa forme fonctionnelle si elle risque de déconner
+Lexique: dire "mission de stage" et pas juste "stage", apparemment c'est pas ouf
+
+[Penser à inclure]
+-> Stage :
+	Cahier des charges évolutif, liste de besoins en termes de graphes
+	Bootstrap
+	jQuery
+	RGraph
+	Lecture de Excel
+	PHPMailer, système de reset de MDP
+	Travail sur du FTP
+	HeidiSQL
+	MCD
+	Documentation sur le portfolio
+
+[Etapes]
+- présentation : 
+	nom,
+	âge,
+	parcours scolaire,
+	projet pro
+
+- sommaire : 
+	compétences acquises,
+	PPE,
+	mission de stage,
+	exemples de compétences avancées mobilisées notamment pendant les stages
+
+- parcours : terminale scientifique, intro à l'informatique (Python : algo, débuts de POO)
+	====> !! Faire une jolie slide de haut en bas avec les compétences précédentes 
+		 (au pire, demander à Sammy un screen)
+
+- présentation PPE : 
+	décrire le contexte,
+	expliquer compétences mobilisées dans PPE1 et dans PPE2
+
+- présentation mission de stage :
+	expliquer le déroulement, 
+	donner le contexte,
+	expliquer les compétences mobilisées
+
+- détail des techno avancées : (A VOIR CE QUI EST DIT EN DIAPO ET GARDÉ SOUS LA MANCHE POUR LES QUESTIONS)
+	JavaScript,
+	Bootstrap et sa flexibilité des Grid, 
+	bibliothèque RGraph et son développement axé POO,
+	lecture des Excel et intégration à la base de données
+
+- conclusion : BTS SIO apporté beaucoup de compétences que ce soit technique en TP et stage tout comme de travail en équipe et de gestion de projet
