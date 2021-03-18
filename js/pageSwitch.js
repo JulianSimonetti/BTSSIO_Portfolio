@@ -14,5 +14,7 @@ function loadPage(id, scroll = true) {
 }
 
 window.onload = function () {
-
+    $(".screenzone").click(function () {
+        $(this).toggleClass("enlarge");
+    });
 };
