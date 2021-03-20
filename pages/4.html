@@ -105,74 +105,48 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-lg-1 col-md-1"></div>
-    <div class="col-lg-5 col-md-5">
-        <table class="table">
-            <tbody>
-                <tr>
-                    <td>
-                        <h5>Visuels</h5>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <figure>
-                            <a href="./img/AFC1.png" target="_blank"><img src="./img/AFC1.png" class="img-fluid screenzone" alt="Page d'authentification" /></a>
-                            <figcaption>fig. 1 : Page d'authentification</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <figure>
-                            <a href="./img/AFC2.png" target="_blank"><img src="./img/AFC2.png" class="img-fluid screenzone" alt="Visualisation, modification et validation d'une fiche de frais" /></a>
-                            <figcaption>fig. 2 : Visualisation, modification et validation d'une fiche de frais</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="col-lg-8 col-md-8 mx-auto">
+        <h5>Le format du projet</h5>
+        <p>
+            Il a été décidé que la solution serait une <b>application Web</b>.
+            <br />
+            Son développement côté client reposera dans un premier lieu sur le framework Bootstrap allié à jQuery.
+            <br />
+            Bootstrap permet la création de pages <i>responsives</i> grâce à un système de grilles ou <i>grid</i>
+        </p>
     </div>
-    <div class="col-lg-5 col-md-5">
-        <table class="table table-info">
-            <tbody>
-                <tr>
-                    <td>
-                        <h5>Le contexte</h5>
-                        <p>
-                            L'organisation GSB a pour objectif de disposer d'une vue dynamique et interactive des différents frais liés à la comptabilité.
-                            <br />
-                            Pour ce projet le cahier des charges s'articule autour des cas d'utilisation dont la modélisation est proposée en début d'étude.
-                        </p>
-                        <hr />
-                        <p>
-                            Le coeur du développement est identique à GCR, l'on part d'une ébauche d'appli web que l'on adapte et complète selon le cahier des charges.
-                            <br />
-                            Ici, on accorde une place plus importante à l'aspect base de données, cette fois-ci sous SQL Server. Le développement mènera à l'utilisation de procédures stockées, fonctions table et transactions.
-                            <br />
-                            Par ailleurs, le MVC reste au centre de la méthode, accompagné d'une amélioration : l'on a recours à beaucoup plus d'objets, que ce soit pour le modèle ou même en tant que classes métiers.
-                        </p>
-                        <hr />
-                        <h5>Compétences supplémentaires mobilisées par rapport au PPE 1</h5>
-                        <ul style="list-style-type: square">
-                            <li>Lecture et interprétation d'un diagramme de cas d'utilisation (UML)</li>
-                            <li>Utilisation des procédures stockées et fonctions SQL</li>
-                            <li>Utilisation du Transact-SQL</li>
-                            <li>Programmation orientée objet en PHP</li>
-                            <li>Compréhension et application de l'héritage/sécialisation et du polymorphisme</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="col-lg-4 col-md-4 mx-auto">
+        <div class="clearfix">
+            <img src="./img/bootstrap_logo.png" height="150" width="150" class="img-thumbnail float-left screenzone" alt="Logo Bootstrap" />
+            <img src="./img/jquery_logo.png" height="150" width="150" class="img-thumbnail float-right screenzone" alt="Logo jQuery" />
+        </div>
+        <p class="figcaplike">Combinaison de Bootstrap et jQuery</p>
     </div>
-    <div class="col-lg-1 col-md-1"></div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-lg-4 col-md-4 mx-auto my-auto">
+        <figure>
+            <img src="./img/mockup_ora.jpg" class="img-thumbnail float-left screenzone" alt="Mockup interface" />
+            <figcaption class="figcaplike">Première <i>mock-up</i> de l'application</figcaption>
+        </figure>
+    </div>
+    <div class="col-lg-8 col-md-8 mx-auto">
+        <p>
+            Concernant l'interface, une première <i>mock-up</i> (désignant un prototype d'interface utilisateur) a été établi et comporte :
+        </p>
+        <ul style="list-style-type: square">
+            <li>Une <b>Navbar</b> au format Bootstrap en haut, permettant de naviguer entre les pages</li>
+            <li>Une zone principale contenant le graphe, ainsi qu'un bouton d'exportation en PNG</li>
+            <li>D'éventuelles zones contenant des contrôles dynamiques pour le graphe, comme du filtrage.</li>
+        </ul>
+    </div>
 </div>
 <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
         <div class="clearfix">
-            <a class="btn btn-primary float-left" href="javascript:loadPage(2)">&larr; La formation</a>
-            <a class="btn btn-primary float-right" href="javascript:loadPage(4)">Le stage &rarr;</a>
+            <a class="btn btn-primary float-left" href="javascript:loadPage(3)">&larr; Les PPE</a>
+            <a class="btn btn-primary float-right" href="javascript:loadPage(5)">La veille &rarr;</a>
         </div>
     </div>
 </div>
