@@ -45,100 +45,61 @@
 <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
         <h2 class="post-preview">
-            La mission
+            Introduction à la mission
         </h2>
         <br />
     </div>
 </div>
 <div class="row">
-    <div class="col-lg-1 col-md-1"></div>
-    <div class="col-lg-5 col-md-5">
+    <div class="col-lg col-md mx-auto">
         <table class="table table-info">
             <tbody>
                 <tr>
                     <td>
                         <h5>Le contexte</h5>
                         <p>
-                            L'organisation GSB souhaite disposer d'une interface pour le renseignement des comptes rendus liés aux visites de représentants commerciaux.
+                            L'unité PEPS dispose de différents outils permettant de suivre les opérations planifiées, en cours et passées (réussies ou non). 
+                            Ces outils puisent leurs données dans des fichiers Excel (nommées <i>Exports</i>) générés sur mesure quotidiennement à partir de la base de données globale. 
                             <br />
-                            Le cahier des charges a été établi d'après les besoins de traitement et de conservation de certaines données, et prend compte des avis et suggestions des utilisateurs concernant certaines fonctionnalités.
+                            Les scripts effectuant ces Exports sont paramétrés et exécutés selon les besoins via le service <i>cron</i> sous Linux.
                         </p>
                         <hr />
                         <p>
-                            On dispose donc d'uné ébauche d'application web, reposant donc sur l'association du HTML/CSS au PHP. Une base de données sous MySQL sera utilisée.
+                            Très régulièrement (au minimum une fois par semaine), un point sur les chiffres doit être fait, le nombre d'opérations réalisées et leur déroulement sont comparés à des objectifs et statistiques antiérieures.
                             <br />
-                            L'objectif sera de réhabiliter le code pour l'utilisation prévue dans le cahier des charges, ajouter les fonctionnalités manquantes et disposer à terme d'une application web opérationnelle.
+                            Pour cela, il est nécessaire de se reporter aux Exports afin d'observer, manipuler les données. 
                             <br />
-                            La plupart du développement suivra l'architecture MVC.
+                            Dans des buts de gestion, il est important que les données qui en ressortent soient compréhensibles et sujettes à analyse, par exemple aux réunions. Ainsi on en génère des graphiques, également via les outils intégrés au tableur.
+                            <br />
+                            Par ailleurs, certaines manipulations de données doivent également être faites à la main pour analyser précisément ces données.
+                            <br />
+                            <b>Ce processus de rendu statistique se nomme reporting.</b>
                         </p>
                         <hr />
-                        <h5>Compétences mobilisées</h5>
+                        <h5>Le besoin</h5>
+                        <p>
+                            La méthode actuelle s'avère fastidieuse et chronophage. Ainsi on souhaite automatiser le reporting lié à l'activité de PEPS, afin de gagner en temps et en efficacité.
+                            <br />
+                            Par ailleurs, une éventuelle solution répondant à ce besoin serait une bonne opportunité d'apporter aux statistiques : 
+                        </p>
                         <ul style="list-style-type: square">
-                            <li>Compréhension d'un cahier des charges</li>
-                            <li>Maquettage d'une solution</li>
-                            <li>Développement en langage PHP</li>
-                            <li>Conception d'une base de données</li>
-                            <li>Mise en place et manipulation d'une base de données avec le langage SQL</li>
-                            <li>Intégration d'une base de données à une application</li>
-                            <li>Développement de pages web en HTML et CSS</li>
-                            <li>Mise en place d'une couche de sécurité avec système d'authentification et de privilèges</li>
-                            <li>Test et débogage d'une application</li>
+                            <li><b>Dynamisme</b> : les données seraient à tout moment à jour par rapport à l'Export le plus récent</li>
+                            <li><b>Interactivité</b> : les graphiques et tableaux disposeraient par exemple d'options de filtrage</li>
+                            <li><b>Accessibilité</b> : l'utilisation d'Excel de manière avancée n'est pas acquise pour tout le monde, contrairement à une interface "sur mesure" suite à l'élaboration d'un cahier des charges</li>
+                            <li><b>Disponibilité</b> : ne pas avoir à récupérer les Exports depuis le client FTP mais plutôt directement accéder aux graphes à tout moment, depuis un navigateur ou un logiciel selon la solution retenue</li>
+                            <li><b>Evolutivité</b> : une solution développée ne dépendrait plus entièrement d'outils tiers tels qu'Excel et permettrait donc différentses évolutions au fil du temps, que ce soit concernant l'interface ou les données proposées</li>
                         </ul>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="col-lg-5 col-md-5">
-        <table class="table">
-            <tbody>
-                <tr>
-                    <td>
-                        <h5>Visuels</h5>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <figure>
-                            <a href="./img/GCR1_full.png" target="_blank"><img src="./img/GCR1.png" class="img-fluid screenzone" alt="Page d'authentification" /></a>
-                            <figcaption>fig. 1 : Page d'authentification</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <figure>
-                            <a href="./img/GCR2_full.png" target="_blank"><img src="./img/GCR2.png" class="img-fluid screenzone" alt="Recheche de médicaments" /></a>
-                            <figcaption>fig. 2 : Recherche de médicaments</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <figure>
-                            <a href="./img/GCR3_full.png" target="_blank"><img src="./img/GCR3.png" class="img-fluid screenzone" alt="Recherche de praticiens" /></a>
-                            <figcaption>fig. 3 : Recherche de praticiens</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <figure>
-                            <a href="./img/GCR4_full.png" target="_blank"><img src="./img/GCR4.png" class="img-fluid screenzone" alt="Renseignement d'un compte rendu de visite" /></a>
-                            <figcaption>fig. 4 : Renseignement d'un compte rendu de visite</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="col-lg-1 col-md-1"></div>
 </div>
 <hr />
 <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
         <h2 class="post-preview">
-            PPE n°2 : AFC
+            Cahier des charges
         </h2>
         <br />
     </div>
