@@ -25,7 +25,7 @@
     <div class="col-lg-4">
         <div class="clearfix">
             <img src="./img/Orange_logo.png" height="134" width="134" class="img-thumbnail float-left screenzone" alt="Logo Orange" />
-            <img src="./img/PEPS_logo.png" class="img-thumbnail float-right screenzone" alt="Logo pôle PEPS" />
+            <img src="./img/PEPS_logo.png" height="134" width="134" class="img-thumbnail float-right screenzone" alt="Logo pôle PEPS" />
         </div>
         <p class="figcaplike">Planification des opérations chez Orange</p>
     </div>
@@ -118,7 +118,7 @@
     <div class="col-lg-4 col-md-4 mx-auto">
         <div class="clearfix">
             <img src="./img/bootstrap_logo.png" height="150" width="150" class="img-thumbnail float-left screenzone" alt="Logo Bootstrap" />
-            <img src="./img/jQuery_logo.png" height="150" width="150" class="img-thumbnail float-right screenzone" alt="Logo jQuery" />
+            <img src="./img/jquery_logo.png" height="150" width="150" class="img-thumbnail float-right screenzone" alt="Logo jQuery" />
         </div>
         <p class="figcaplike">Combinaison de Bootstrap et jQuery</p>
     </div>
@@ -133,12 +133,66 @@
     </div>
     <div class="col-lg-8 col-md-8 mx-auto">
         <p>
-            Concernant l'interface, une première <i>mock-up</i> (désignant un prototype d'interface utilisateur) a été établi et comporte :
+            Concernant l'interface, une première <i>mock-up</i> (désignant un prototype d'interface utilisateur) a été établie et comporte :
         </p>
         <ul style="list-style-type: square">
             <li>Une <b>Navbar</b> au format Bootstrap en haut, permettant de naviguer entre les pages</li>
             <li>Une zone principale contenant le graphe, ainsi qu'un bouton d'exportation en PNG</li>
             <li>D'éventuelles zones contenant des contrôles dynamiques pour le graphe, comme du filtrage.</li>
+        </ul>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-lg-8 col-md-8 mx-auto">
+        <h5>La base de données</h5>
+        <p>
+            Afin de faciliter le développement et de permettre une bien meilleure flexibilité des fonctionnalités et une bonne évolutivité de l'application, 
+            il a été décidé que la solution dépendrait d'une base de données propre, et non d'une autre base de données déjà basée sur les Exports voire les Exports eux&#x2011;mêmes.
+            <br />
+            Cette base de données sera établie sous le SGBD MariaDB, situé directement sur le serveur de PEPS. 
+            Le logiciel HeidiSQL sert comme interface, à l'instar de PHPMyAdmin ou de SQL Server Management Studio.
+        </p>
+    </div>
+    <div class="col-lg-4 col-md-4 mx-auto my-auto">
+        <div class="clearfix">
+            <img src="./img/mariadb_logo.png" height="150" width="150" class="img-thumbnail float-left screenzone" alt="Logo MariaDB" />
+            <img src="./img/heidisql_logo.png" height="150" width="150" class="img-thumbnail float-right screenzone" alt="Logo HeidiSQL" />
+        </div>
+        <p class="figcaplike">BD sous MariaDB et utilisation de HeidiSQL</p>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+        <h2 class="post-preview">
+            Le projet
+        </h2>
+        <br />
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-4 col-md-4 mx-auto my-auto">
+        <figure>
+            <a href="./img/ora_1.png" target="_blank"><img src="./img/ora_1.png" class="img-thumbnail float-left screenzone" alt="L'application ORA" /></a>
+            <figcaption class="figcaplike">L'application ORA (clic pour zoomer)</figcaption>
+        </figure>
+    </div>
+    <div class="col-lg-8 col-md-8 mx-auto">
+        <h5>Caractéristiques de l'application</h5>
+        <ul style="list-style-type: square">
+            <li>Nom de l'application : <b>ORA</b> (pour "Outil de Reporting Avancé")</li>
+            <li>Langages backend : PHP, SQL</li>
+            <li>Langages frontend : HTML/CSS, JavaScript</li>
+        </ul>
+        <hr />
+        <h5>Bibliothèques utilisées</h5>
+        <ul style="list-style-type: square">
+            <li>Bootstrap (CSS, JS) : framework pour la mise en page HTML</li>
+            <li>jQuery (JS) : bibliothèques de fonctionnalités JavaScript</li>
+            <li><b>RGraph</b> (JS) : bibliothèque de génération de graphes sous forme de <i>canvas</i> HTML (voir ci-après)</li>
+            <li>PHPMailer (PHP) : outil d'envoi d'e-mails via PHP</li>
+            <li>Spout (PHP) : outil de lecture de fichiers Excel</li>
         </ul>
     </div>
 </div>
