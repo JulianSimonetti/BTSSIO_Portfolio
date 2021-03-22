@@ -1,11 +1,9 @@
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal pour l'affichage intégré  -->
+<div class="modal fade" id="docuModal" tabindex="-1" role="dialog" aria-labelledby="docuModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Documentation</h5>
+                <h5 class="modal-title" id="docuModalLabel">Documentation</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -13,7 +11,7 @@
             <div class="modal-body">
                 <div class="container-fluid">
                     <div class="col-lg-auto mx-auto my-auto justify-content-center text-center">
-                        <iframe width="600" height="720" src="./files/ORA_Complete.pdf" ></iframe>
+                        <iframe width="700" height="720" src="./files/ORA_Complete.pdf" ></iframe>
                     </div>
                 </div>
             </div>
@@ -175,7 +173,7 @@
         <h5>La base de données</h5>
         <p>
             Afin de faciliter le développement et de permettre une bien meilleure flexibilité des fonctionnalités et une bonne évolutivité de l'application, 
-            il a été décidé que la solution dépendrait d'une base de données propre, et non d'une autre base de données déjà basée sur les Exports voire les Exports eux&#x2011;mêmes.
+            il a été décidé que la solution dépendrait d'une base de données propre, et non d'une autre base de données déjà basée sur les Exports voire des Exports eux&#x2011;mêmes.
             <br />
             Cette base de données sera établie sous le SGBD MariaDB, situé directement sur le serveur de PEPS. 
             Le logiciel HeidiSQL sert comme interface, à l'instar de PHPMyAdmin ou de SQL Server Management Studio.
@@ -217,13 +215,13 @@
                         <li>Langages frontend : HTML/CSS, JavaScript</li>
                     </ul>
                     <hr />
-                    <h5>Bibliothèques utilisées</h5>
+                    <h5>Bibliothèques utilisées<br/>(clic sur un nom pour la documentation)</h5>
                     <ul style="list-style-type: square">
-                        <li>Bootstrap (CSS, JS) : framework pour la mise en page HTML</li>
-                        <li>jQuery (JS) : bibliothèques de fonctionnalités JavaScript</li>
-                        <li><b>RGraph</b> (JS) : bibliothèque de génération de graphes sous forme de <i>canvas</i> HTML (voir ci-après)</li>
-                        <li>PHPMailer (PHP) : outil d'envoi d'e-mails via PHP</li>
-                        <li>Spout (PHP) : outil de lecture de fichiers Excel</li>
+                        <li><a href="https://getbootstrap.com/docs/4.0/" target="_blank">Bootstrap</a> (CSS, JS) : framework pour la mise en page HTML</li>
+                        <li><a href="https://api.jquery.com/" target="_blank">jQuery</a> (JS) : bibliothèques de fonctionnalités JavaScript</li>
+                        <li><a href="https://www.rgraph.net/canvas/" target="_blank"><b>RGraph</b></a> (JS) : bibliothèque de génération de graphes sous forme de <i>canvas</i> HTML (voir ci-après)</li>
+                        <li><a href="https://github.com/PHPMailer/PHPMailer/" target="_blank">PHPMailer</a> (PHP) : outil d'envoi d'e-mails via PHP</li>
+                        <li><a href="https://opensource.box.com/spout/" target="_blank">Spout</a> (PHP) : outil de lecture de fichiers Excel</li>
                     </ul>
                     <hr />
                     <h5>Fonctionnalités notables</h5>
@@ -238,11 +236,56 @@
         </table>
     </div>
 </div>
+<hr />
 <div class="row">
-    <div class="col-lg-auto col-md-auto mx-auto">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    <div class="col-lg-10 col-md-10 mx-auto justify-content-center text-center">
+        <p>
+            Vous pourrez trouver grâce au bouton ci-dessous la <b>documentation</b> effectuée lors de ce projet. 
+            Il s'agit de la documentation complète, à savoir un assemblage de la documentation utilisateur 
+            et de la documentation technique. Ces deux documentations ont initialement été éditées séparément 
+            pour être adressées respectivement aux futurs utilisateurs et aux développeurs qui reprendront le projet.
+        </p>
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#docuModal">
             Voir la documentation
         </button>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-lg-10 col-md-10 mx-auto">
+        <h2 class="post-preview">
+            Le développement
+        </h2>
+        <p>
+            Vous seront présentés par la suite certaines parties importantes de ma mission de stage qui ont pu me permettre de mettre en oeuvre certaines compétences avancées 
+            et d'apprendre davantage sur les notions traitées.
+        </p>
+        <br />
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-10 col-md-10 mx-auto">
+        <h5>Les graphiques</h5>
+        <p>
+            Il s'agit là peut-être de la partie la plus complexe du projet. En effet, suite à une courte veille concernant une solution de génération et manipulation de graphes, 
+            la bibliothèque JavaScript <i>RGraph</i> a été choisie pour cette tâche. Il s'agit d'une bibliothèque gratuite et <i>open source</i> indépendante disposant d'une 
+            multitude de types de graphes, de paramètres disponibles et d'options de personnalisation.
+        </p>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-lg-4 col-md-4 mx-auto my-auto">
+        <p>
+            Voici un exemple d'instanciation de graphe en utilisant RGraph. Outre les paramètres nécessaires tels que l'ID de DOM du canvas où le graphe sera affiché ainsi que les données 
+            qui seront utilisées, de nombreux paramètres peuvent être choisis pour personnaliser différents aspects du graphique, allant de son apparence à son fonctionnement et sa flexibilité.
+        </p>
+    </div>
+    <div class="col-lg-8 col-md-8 mx-auto my-auto justify-content-center text-center">
+        <figure>
+            <a href="./img/rgraph_1.png" target="_blank"><img src="./img/rgraph_1.png" width="730" class="img-thumbnail float-left screenzone" alt="Exemple d'instanciation de graphe" /></a>
+            <figcaption class="figcaplike">Exemple d'instanciation de graphe RGraph</figcaption>
+        </figure>
     </div>
 </div>
 <div class="row">
